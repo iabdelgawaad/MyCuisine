@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="New Direction # "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/num_of_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="null" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#cccccc"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp" />
+    <EditText
+        android:id="@+id/edit_example_dialog_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Example: preheat oven to 400 degrees F 0r 200 degrees C... "
+        android:paddingBottom="20dp" />
+</LinearLayout>

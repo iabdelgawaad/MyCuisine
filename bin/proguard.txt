@@ -1,0 +1,15 @@
+# view AndroidManifest.xml #generated:35
+-keep class com.cooking.mycuisine.AddRecipesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.cooking.mycuisine.AllRecipesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.cooking.mycuisine.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.cooking.mycuisine.SortedRecipesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.cooking.mycuisine.SplashScreenActivity { <init>(...); }
+

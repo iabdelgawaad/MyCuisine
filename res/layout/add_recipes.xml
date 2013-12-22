@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" 
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/camera_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:text="Take Image For Your Recipe"
+                android:background="@drawable/orange_btn"
+                style="@style/ButtonText" />
+            <EditText
+                android:id="@+id/editText_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Title of the recipe"
+                android:textColor="#fff" >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+            <TextView
+                android:id="@+id/textView_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_1" 
+                android:textColor="#fff">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" none"
+                android:inputType="number"
+                android:textColor="#fff" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_2"
+                android:textColor="#fff" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" >
+            <TextView
+                android:id="@+id/textView_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_3"
+                android:textColor="#fff" >
+            </TextView>
+            <EditText
+                android:id="@+id/editText_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:hint=" none"
+                android:inputType="number"
+                android:textColor="#fff">
+            </EditText>
+            <TextView
+                android:id="@+id/textView_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_4" 
+                android:textColor="#fff">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+           >
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_5" 
+                android:textColor="#fff"
+                android:checked="false"
+                android:paddingRight="10dp"
+                >
+            </CheckBox>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#1f7C65"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:text="Ingerdients"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#cccccc"
+                android:paddingTop="20dp" />
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/cooking_pot"
+                android:text="Add Required Ingredient"
+                android:background="@drawable/orange_btn"
+                style="@style/ButtonText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/title_2"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#1f7C65"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:text="Directions"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#cccccc"
+                android:paddingTop="20dp" />
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/cooking_pot"
+                android:text="Add Direction Step"
+                android:background="@drawable/orange_btn"
+                style="@style/ButtonText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/title_3"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#1f7C65"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:text="Category"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#cccccc"
+                android:paddingTop="20dp" />
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/cooking_pot"
+                android:text="Add Category"
+                android:background="@drawable/orange_btn"
+                style="@style/ButtonText" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

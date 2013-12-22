@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/preloader"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dip"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/internetConnectionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/recipe_icon" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/image"
+            android:layout_below="@+id/image"
+            android:text="MyCuisine"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF8600"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/internet_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:padding="20dp"
+            android:text="Check your Internet Connection !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noRecipesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/image_no_recipes"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/recipe_icon" />
+
+        <TextView
+            android:id="@+id/text_no_recipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/image_no_recipes"
+            android:layout_below="@+id/image_no_recipes"
+            android:text="MyCuisine"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF8600"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/no_recipes_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_no_recipes"
+            android:padding="20dp"
+            android:text="Your account is empty..please Add Recipes !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noUserAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/image_no_accounts"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/recipe_icon" />
+
+        <TextView
+            android:id="@+id/text_no_accounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/image_no_accounts"
+            android:layout_below="@+id/image_no_accounts"
+            android:text="MyCuisine"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF8600"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/no_account_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_no_accounts"
+            android:padding="20dp"
+            android:text="You should use your Google Account !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/account_button"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_account_error"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/orange_btn"
+            android:clickable="true"
+            android:padding="20dp"
+            android:text="Choose Google Account" />
+    </RelativeLayout>
+
+</LinearLayout>
